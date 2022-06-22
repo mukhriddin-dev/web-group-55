@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+   font-family: 'game-font' ;
+   src: url("../fonts/game-fonts/game-font-1.otf");
+}
+
+
+@font-face {
+   font-family: 'for-text';
+   src: url('../fonts/sans/GOTTEN.otf');
+}
+
+body{
+  overflow-x: hidden;
+}
+header{
+  width: 100%;
+    background: green;
+    padding: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "game-font";
+    color:white;
+}
+
+nav{
+  background:aqua;
+  text-transform: uppercase;
+  text-align: center;
+  height: 40px;
+  padding-top: 14px;
+}
+
+aside{
+  background: orange;
+  width: 25%;
+  height: 800px;
+  float:left;
+}
+
+
+section{
+  width: 75%;
+  background:crimson;
+  display: inline-block;
+  height: 800px;
+}
+
+article{
+  background: greenyellow;
+    margin: 10px;
+    padding: 10px;
+    height: 223px;
+    border-radius: 7px;
+}
+
+footer{
+  background: darkblue;
+  padding: 40px;
+  text-align: center;
+  color:white;
+  font-size: 20px;
+}
+
+
+
