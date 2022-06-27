@@ -1,0 +1,85 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+
+
+nav{
+   background: teal;
+   margin: 1px;
+   height: 65px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav > .nav__ul{
+   width: 50%;
+   display: flex;
+   list-style-type: none;
+   justify-content: space-evenly ;
+   text-transform: uppercase;
+   color:white;
+   font-family: sans-serif;
+}
+
+nav .nav__ul .nav__link{
+   transition:all 0.3s ease ;
+
+
+}
+nav .nav__ul .nav__link:hover{
+   color:rgba(0, 0, 0, 0.843);
+   cursor: pointer;
+}
+
+
+.flex-container{
+   width: 100%;
+   height: 750px;
+   background: teal;
+   display: flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+   align-items: baseline; 
+   flex-wrap: wrap;    
+}
+
+
+.flex-container > .flex-item{
+   padding: 45px 65px;
+   background: white;
+   margin: 5px;
+   height: 260px;
+}
+
+
+body{
+   width: 100%;
+   height: 100vh;
+   background-image: url("https://picsum.photos/700/500");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top right;
+} 
+
+.card{
+   background-image:url("https://picsum.photos/300/250");
+   background-repeat:no-repeat;
+   background-color:white;
+   width: 300px;
+   height: 420px;
+   margin: 30px auto;
+   display: flex;
+   align-items:center;
+}
+
+.card h4{
+   margin-top: 140px;
+   margin-left: 60px;
+}
+
+.fab{
+   font-size: 60px;
+   color:white;
+}
