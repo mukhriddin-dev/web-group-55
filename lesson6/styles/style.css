@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  background: rgb(164, 23, 23);
+  margin: 100px auto;
+  transition: all 2s ease;
+
+  /* box-shadow: inset 0px 0px 40px black; */
+  /* box-shadow: 20px 20px 4px red; */
+}
+
+.card:hover {
+  background: gold;
+  /* box-shadow: 20px 20px 2px 0px black, 35px 35px 2px 0px yellow,
+    55px 55px 2px 0px darkblue; */
+  box-shadow: 0px 0px 40px black;
+}
+
+.card:active {
+  background: lime;
+}
+
+.text {
+  text-align: center;
+  font-family: sans-serif;
+  /* text-shadow: -5px 20px 0px aqua,
+   -2px 20px 0px rgb(255, 0, 0); */
+}
+
+.text:hover {
+  text-shadow: none;
+  color: green;
+}
+
+/* :hover , :active ,  , :visited , :checked , :focus */
+
+.link {
+  color: black;
+}
+
+.link:visited {
+  color: green;
+}
+
+.link:hover {
+  color: aqua;
+}
+
+.list-item {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  display: inline-block;
+  color: lime;
+}
+
+/* .first{
+   background: red;
+}
+*/
+.color {
+  color: yellow;
+}
+
+.list-item:nth-child(2) {
+  background: aqua;
+}
+
+.list-item:nth-child(5) {
+  background: darkblue;
+}
+
+.box > p:nth-child(2) {
+  color: green;
+}
