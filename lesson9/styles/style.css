@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* main container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* header styles */
+header {
+  background: #f6f6f9;
+  width: 100%;
+  padding: 5px;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffff;
+  align-items: center;
+  padding-left: 25px;
+}
+
+nav .nav__brand {
+  font-size: 30px;
+}
+
+nav .nav__ul {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+nav .nav__ul .nav__link {
+  list-style-type: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav .nav__ul .nav__link a {
+  text-decoration: none;
+  color: green;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+/*  v-1 */
+
+nav .nav__ul .nav__link a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #000;
+  display: block;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+}
+
+nav .nav__ul .nav__link a:hover::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: #000;
+  display: block;
+}
+
+/* v-2 */
+
+/* nav .nav__ul .nav__link a::after{
+   content:"";
+   width: 100%;
+   height: 2px;
+   background: #000;
+   display: block;
+   margin-top: 5px;
+   opacity: 0;
+   transition: all 0.2s ease-in;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   -ms-transition: all 0.2s ease-in;
+   -o-transition: all 0.2s ease-in;
+}
+
+nav .nav__ul .nav__link a:hover::after{
+   content:"";
+   margin: 0;
+   opacity: 1;
+   width: 100%;
+   height: 2px;
+   background: #000;
+   display: block;
+} */
+
+nav .nav__ul .nav__link a:hover {
+  color: rgb(5, 49, 5);
+}
+
+/* header styles end */
+
+/* main section start */
+
+.flex-container {
+  width: 100%;
+  margin: 4px;
+  padding: 5px;
+  background: rgb(238, 238, 238);
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container .flex-item {
+  background-image: url("https://picsum.photos/400/200");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32%;
+  height: 230px;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  padding: 20px;
+}
+
+/* pseudo elementlar */
+
+.text {
+  text-transform: uppercase;
+}
+
+/* .text::first-letter{
+   font-size: 32px;
+   color:red;
+   font-family: monospace;
+} */
+
+/* .text::first-line{
+   font-size: 32px;
+   color:red;
+   font-family: monospace;
+} */
+
+.text::after {
+  content: "";
+  width: 100px;
+  background: #000;
+  height: 4px;
+  display: block;
+  color: red;
+  opacity: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.text::before {
+  content: "";
+  width: 100px;
+  background: rgb(21, 184, 53);
+  height: 4px;
+  display: block;
+  color: red;
+  opacity: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.text:hover::after {
+  content: "";
+  width: 300px;
+  background: #000;
+  height: 4px;
+  display: block;
+  color: red;
+  opacity: 1;
+}
+
+.text:hover::before {
+  content: "";
+  width: 300px;
+  background: rgb(21, 184, 53);
+  height: 4px;
+  display: block;
+  color: red;
+  opacity: 1;
+}
+
+/* hover, active, visited, focus  */
+
+.form-control {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 8px;
+  color:red;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+::placeholder {
+  color: red;
+}
+.form-control:focus{
+   border:3px aqua solid;
+   box-shadow: inset 1px 1px 8px blue , 1px 1px 10px 0px silver;
+}
+
