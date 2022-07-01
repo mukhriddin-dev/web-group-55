@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/normalize.css">
+   <link rel="stylesheet" href="./styles/style.css">
+   <title>Lesson 8</title>
+</head>
+
+<body>
+
+   <h4>Registration form</h4>
+
+   <form action="https://echo.htmlacademy.ru/" method="POST" class="form">
+
+
+      <label for="firstName"> First name
+         <input type="text" id="firstName" name="first_name" placeholder="enter your name" required maxlength="20">
+      </label>
+
+
+      <label for="lastName"> Last name
+         <input type="text" id="lastName" name="last_name" placeholder="enter your last name" maxlength="20" required>
+      </label>
+
+      <label for="age"> Age
+         <input type="number" id="age" name="age" placeholder="enter your age" min="12" max="99" required>
+      </label>`
+
+
+      <label for="email"> Email
+         <input type="email" id="email" name="email" placeholder="enter your Email">
+      </label>
+
+      <label for="Password"> Password
+         <input type="password" id="Password" name="password" placeholder="enter your Password" maxlength="12"
+            minlength="6" required>
+      </label>
+
+
+      <label for="date"> Date of birth
+         <input type="date" id="date" name="birth_day" required>
+      </label>
+
+
+      <label for="gender">Gender:
+         Male : <input type="radio" id="gender" name="gen"> Female: <input type="radio" name="gen">
+      </label>
+
+
+
+      <label for="tel"> Phone number
+         <input type="tel" id="tel" name="phone_number" placeholder="enter your phone number" maxlength="13">
+      </label>
+
+      <select name="country" id="country">
+         <option value="Andijan">Andijan</option>
+         <option value="Bukhara">Bukhara</option>
+         <option value="Fergana">Fergana</option>
+         <option value="Andijan">Andijan</option>
+         <option value="Bukhara">Bukhara</option>
+         <option value="Fergana">Fergana</option>
+         <option value="Andijan">Andijan</option>
+         <option value="Bukhara">Bukhara</option>
+         <option value="Fergana">Fergana</option>
+         
+
+      </select>
+
+      <textarea name="addres" id="addres" cols="20" rows="10">
+
+</textarea>
+
+
+
+      <input type="submit" value="yuborish">
+      <input type="reset" value="tozalash">
+
+
+
+
+
+
+
+
+   </form>
+
+
+
+</body>
+
+</html>
