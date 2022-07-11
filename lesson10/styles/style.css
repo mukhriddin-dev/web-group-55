@@ -74,6 +74,7 @@ nav {
   text-decoration: none;
 }
 
+
 .nav__ul .nav__link a:hover {
   text-transform: uppercase;
   color: rgb(216, 216, 216);

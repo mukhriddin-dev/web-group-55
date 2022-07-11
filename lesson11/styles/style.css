@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --section-bg: rgb(255, 255, 255);
+  --bootom-bg: rgb(252, 77, 112);
+  --section-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* header section css */
+header {
+  background: #1d1d1d;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* fixed=sticky+absolute; */
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: white;
+  height: 70px;
+  align-items: center;
+}
+
+.nav__ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav__ul .nav__link a {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__ul .nav__link a:hover {
+  text-transform: uppercase;
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown .menu-content {
+  display: none;
+  background: white;
+  position: absolute;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 12px;
+  top: 20px;
+}
+.dropdown .menu-content a {
+  color: rgb(0, 0, 0);
+  margin: 2px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown .menu-content a:hover {
+  color: black;
+  background: silver;
+}
+.dropdown:hover .menu-content {
+  display: block;
+}
+
+/* header section css end*/
+
+main {
+  margin-top: 70px;
+}
+/* sections  */
+#one {
+  width: var(--section-width);
+  height: 100vh;
+  background: var(--section-bg);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#two {
+  width: 100%;
+  height: 100vh;
+  background: var(--section-bg);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#three {
+  width: 100%;
+  height: 100vh;
+  background: var(--bootom-bg);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* end */
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+/* to top btn */
+
+.btn {
+  font-size: 50px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 50px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: rgb(255, 208, 0);
+}
+
+.btn:active {
+  font-size: 50px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: darkblue;
+}
+
+/* step 2 */
+
+input[type="checkbox"]{
+   width: 40px;
+   height: 40px;
+   background: silver;
+   display: block;
+   appearance: none;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   position: relative;
+   border-radius:50%;
+   -webkit-border-radius:50%;
+   -moz-border-radius:50%;
+   -ms-border-radius:50%;
+   -o-border-radius:50%;
+}
+
+
+input[type="checkbox"]::after{
+   content:"\2713";
+   font-size: 40px;
+   position: absolute;
+   display: none;
+}
+
+
+input[type="checkbox"]:hover{
+   background: rgba(176, 254, 176, 0.678);
+}
+
+
+input[type="checkbox"]:checked::after{
+   display: block;
+   font-size: 40px;
+   position: absolute;
+}

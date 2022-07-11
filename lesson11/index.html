@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- icons css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" />
+   <!-- normalize css -->
+   <link rel="stylesheet" href="./normalize.css" />
+   <!-- custom css -->
+   <link rel="stylesheet" href="./style.css" />
+   <title>Lesson 11</title>
+</head>
+
+<body>
+   <!-- header start -->
+   <header>
+      <div class="container">
+         <nav>
+            <div class="nav__brand">
+               <h2>LOGO</h2>
+            </div>
+
+            <ul class="nav__ul">
+               <li class="nav__link"><a href="#one">Home</a></li>
+               <li class="nav__link"><a href="#two">About</a></li>
+               <li class="nav__link"><a href="#three">Service</a></li>
+               <li class="nav__link dropdown">
+                  <a href="#" class="button">Contact</a>
+
+                  <div class="menu-content">
+                     <a href="#">Contact</a>
+                     <a href="#">Contact</a>
+                     <a href="#">Contact</a>
+                     <a href="#">Contact</a>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <!-- header finish -->
+   <main>
+      <section id="one">
+         <div class="wrapper">
+            
+            <label for="check">
+               <input type="checkbox" id="check" />
+            </label>
+
+            <input list="list" />
+
+            <datalist id="list">
+               <option value="php">php</option>
+               <option value="javaScript">javaScript</option>
+               <option value="Golang">go</option>
+               <option value="c++">c++</option>
+               <option value="nodejs">nodejs</option>
+               <option value="ruby">ruby</option>
+            </datalist>
+
+            <input type="submit" value="yuborish">
+
+            <input type="file" name="file" id="file">
+
+         </div>
+      </section>
+
+      <section id="two">
+         <h1>About Section</h1>
+      </section>
+
+      <section id="three">
+         <h1>Service Section</h1>
+
+         <a href="#" class="btn">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+         </a>
+      </section>
+
+      <div class="footer">
+         <p>2022</p>
+      </div>
+   </main>
+</body>
+
+</html>

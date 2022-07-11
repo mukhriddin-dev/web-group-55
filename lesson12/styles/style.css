@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+
+}
+
+.box{
+  width: 300px;
+  height: 300px;
+  background: seagreen;
+  transition: transform 0.2s ease;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  margin: 50px auto;
+}
+
+
+
+.box:hover{
+  transform: skew(10deg ,-10deg);
+  transform-origin: left bottom;
+  -webkit-transform: skew(10deg ,-10deg);
+  -moz-transform: skew(10deg ,-10deg);
+  -ms-transform: skew(10deg ,-10deg);
+  -o-transform: skew(10deg ,-10deg);
+}
+/* transform = translate X , Y elementlarni ko'chiradi
+
+
+
+
+*/
+
+img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position:center;
+  background: red;
+  display: block;
+}
