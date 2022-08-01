@@ -1,0 +1,6 @@
+@mixin btn($a, $b, $c, $d) {
+   color: $a;
+   width: $b;
+   height: $c;
+   border-radius: $d;
+}

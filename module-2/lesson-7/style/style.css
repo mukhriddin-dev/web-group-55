@@ -1,0 +1,181 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: rgba(177, 242, 255, 0.509);
+   width: 100%;
+   height: 100vh;
+}
+
+.earth {
+   width: 100%;
+   height: 8px;
+   background: green;
+   position: absolute;
+   bottom: 0px;
+   box-shadow: 0px -5px 15px goldenrod;
+   transition: all 0.2s ease;
+   -webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+   -ms-transition: all 0.2s ease;
+   -o-transition: all 0.2s ease;
+}
+
+
+.ball {
+   width: 200px;
+   position: absolute;
+   animation-name: ball;
+   animation-duration: 6s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes ball {
+
+   0% {
+      resize: absolute;
+      top: 5px;
+      left: 3px;
+      transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+   }
+
+   12% {
+      position: relative;
+      bottom: 0;
+      left: 9px;
+      transform: rotate(190deg);
+      -webkit-transform: rotate(190deg);
+      -moz-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+      -o-transform: rotate(190deg);
+   }
+
+
+   25% {
+      position: relative;
+      top: 900px;
+      left: 60px;
+      transform: rotate(30deg);
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+
+   }
+
+   37% {
+      position: relative;
+      top: 620px;
+      left: 150px;
+      transform: rotate(230deg);
+      -webkit-transform: rotate(230deg);
+      -moz-transform: rotate(230deg);
+      -ms-transform: rotate(230deg);
+      -o-transform: rotate(230deg);
+   }
+
+   50% {
+      position: relative;
+      top: 900px;
+      left: 320px;
+      transform: rotate(330deg);
+      -webkit-transform: rotate(330deg);
+      -moz-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+      -o-transform: rotate(330deg);
+   }
+
+   75% {
+
+      position: relative;
+      top: 700px;
+      left: 520px;
+      transform: rotate(330deg);
+      -webkit-transform: rotate(330deg);
+      -moz-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+      -o-transform: rotate(330deg);
+   }
+
+
+   100% {
+      position: relative;
+      top: 900px;
+      left: 1520px;
+      transform: rotate(630deg);
+      -webkit-transform: rotate(630deg);
+      -moz-transform: rotate(630deg);
+      -ms-transform: rotate(630deg);
+      -o-transform: rotate(630deg);
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+   width: 200px;
+   height: 200px;
+   background: crimson;
+   animation-name: boxAnimate;
+   animation-duration: 1s;
+   animation-delay: 0s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   animation-fill-mode: both;
+   animation-iteration-count: 5;
+   animation-play-state: paused;
+}
+
+.card {
+   width: 200px;
+   height: 200px;
+   background: #000;
+}
+
+@keyframes boxAnimate {
+   from {
+      width: 200px;
+      height: 200px;
+      background: crimson;
+   }
+
+   to {
+      width: 100%;
+      height: 100vh;
+      background-color: green;
+   }
+}
